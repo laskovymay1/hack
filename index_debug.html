@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+            <script src="poly_tracer.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+            integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+            crossorigin=""/>
+            <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+        </head>
+
+        <style> 
+            #test1 {
+                font-family: 'Consolas', Courier, monospace;
+                font-size: small;
+            }
+            
+            #map {
+                height: 80%; 
+                width: 95%;
+                margin: auto;
+                padding-top: 64px;
+                }
+        </style>
+
+        <body>
+            <div id='test1'></div>
+            <br><button id='button1' onClick='foo();'>click me</button>
+            <div id="map"></div>
+            <br><button id='button2' onClick='initMap();'>init map</button>
+            <br><button id='button3' onClick='startDrawing();'>drawPolygon</button>
+
+        </body>
+    </body>
+</html>
